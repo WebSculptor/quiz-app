@@ -2,9 +2,9 @@
 
 Check out the live version [here](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+IQ Quest Challenge is an engaging and intellectually stimulating quiz app designed to put your knowledge, logic, and critical thinking skills to the ultimate test. Embark on a journey of self-discovery and learning as you tackle a wide range of thought-provoking questions across various subjects and categories.
 
 ### `yarn start`
 
