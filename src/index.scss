@@ -1,4 +1,14 @@
 :root {
+  --white-main: #fff;
+  --white-tint-1: #efefef;
+
+  --black-main: #26272b;
+  --black-tint-1: #323339;
+
+  --border: 1px solid rgba(150, 150, 150, 0.2);
+
+  --mx: 130rem;
+
   --pointer: pointer;
   --not-allowed: not-allowed;
 
@@ -27,6 +37,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  background-color: var(--white-main);
 
   @media screen and (min-width: 2560px) {
     font-size: 122.5%;
@@ -56,6 +67,12 @@ html {
   body {
     width: 100%;
     height: 100%;
+    font-family: "Ubuntu", sans-serif;
+    padding: 0 1rem;
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
 
     .relative {
       position: relative;
@@ -135,6 +152,30 @@ html {
 
     .justify-start {
       justify-content: flex-start;
+    }
+
+    #root {
+      max-width: var(--mx);
+      width: 100%;
+      height: 100%;
+      background-color: var(--white-main);
+      margin: 0 auto;
+
+      a,
+      button {
+        cursor: var(--pointer);
+      }
+
+      input,
+      textarea,
+      select {
+        font-family: inherit;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
     }
   }
 }
