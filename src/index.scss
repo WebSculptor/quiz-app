@@ -1,9 +1,10 @@
 :root {
   --white-main: #fff;
-  --white-tint-1: #efefef;
+  --white-tint-1: #f7f7f7;
+  --white-tint-2: #f1efef;
 
   --black-main: #26272b;
-  --black-tint-1: #323339;
+  --black-tint-1: #434449;
 
   --border: 1px solid rgba(150, 150, 150, 0.2);
 
@@ -175,6 +176,19 @@ html {
       p {
         font-size: 1.4rem;
         line-height: 2rem;
+      }
+
+      .isLoading {
+        animation: pulse 1s infinite alternate;
+      }
+
+      @keyframes pulse {
+        0% {
+          background-color: var(--white-tint-2);
+        }
+        100% {
+          background-color: var(--white-tint-1);
+        }
       }
     }
   }

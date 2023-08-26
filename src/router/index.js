@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import { AppLayout } from "layout";
-import { HomePage } from "pages";
+import { FormPage, HomePage } from "pages";
 
 export const router = createBrowserRouter([
   {
@@ -10,7 +10,15 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <FormPage />,
+      },
+      {
+        path: "/q",
         element: <HomePage />,
+      },
+      {
+        path: "/r",
+        element: <p>Congratulations</p>,
       },
     ],
   },

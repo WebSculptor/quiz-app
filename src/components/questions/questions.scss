@@ -1,0 +1,48 @@
+.question_container {
+  gap: 0.5rem;
+
+  .category {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--black-main);
+  }
+
+  .question {
+    margin-top: 2rem;
+    gap: 0.8rem;
+
+    p {
+      color: var(--black-tint-1);
+      font-weight: 300;
+      max-width: 50rem;
+      width: 100%;
+    }
+
+    .isLoading {
+      max-width: 50rem;
+
+      &:last-child {
+        max-width: 40rem;
+      }
+    }
+  }
+
+  .isLoading {
+    width: 100%;
+    height: 1.5rem;
+    background-color: var(--white-tint-1);
+    border-radius: 3rem;
+  }
+
+  .isLoading.category {
+    max-width: 30rem;
+  }
+
+  .isLoading.remainder {
+    max-width: 20rem;
+  }
+}
